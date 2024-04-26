@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcorralesExamen.Vistas.VistaLogin"
+             Title="Login">
+    <VerticalStackLayout
+        Spacing="20"
+        Margin="25"
+        >
+        <Label 
+            
+            Text="Inicio de Sesion Sistema"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="red"
+            FontSize="20"
+            />
+        <Image
+            Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png"
+            HeightRequest="100"
+            ></Image>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Usuario" 
+            
+         Grid.Row="0"
+         Grid.Column="0"
+         VerticalTextAlignment="Center"
+         HorizontalTextAlignment="Center"/>
+            <Entry 
+         Placeholder="Ingrese el Usuario"
+         x:Name="txtusuario"
+         Grid.Row="0"
+         Grid.Column="1"/>
+
+            <Label Text="Contraseña" 
+            
+     Grid.Row="1"
+     Grid.Column="0"
+     VerticalTextAlignment="Center"
+     HorizontalTextAlignment="Center"/>
+
+            <Entry Placeholder="Ingrese la contraseña"
+            x:Name="txtcontraseña"
+         IsPassword="True"
+         Grid.Row="1"
+         Grid.Column="1"/>
+
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Button
+                Grid.Row="0"
+                Grid.Column="0"
+                Text="Iniciar"
+                 Clicked="Button_Clicked_1"
+                ></Button>
+
+                <Button
+                Grid.Row="0"
+                Grid.Column="1"
+                Text="Acerca De"
+                 Clicked="Button_Clicked"
+                ></Button>
+        </Grid>
+        
+        
+    </VerticalStackLayout>
+</ContentPage>

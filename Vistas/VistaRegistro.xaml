@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcorralesExamen.Vistas.VistaRegistro"
+             Title="Registro">
+    <ScrollView>
+    <VerticalStackLayout
+        
+        Spacing="20"
+Margin="25">
+
+        <Label
+    x:Name="lblusuario"
+    FontSize="14"
+    HorizontalTextAlignment="End"
+            TextColor="Blue"
+    >
+
+        </Label>
+        <Label 
+           Text="Ventana Registro"
+VerticalOptions="Center" 
+HorizontalOptions="Center"
+TextColor="Blue"
+FontSize="22" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+             
+              
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            
+            <DatePicker
+              
+                x:Name="pickdate"
+                Date="04/25/2024"
+                Format="MM/DD/YYYY">
+                
+            </DatePicker>
+
+            <Label  
+       x:Name="lbfecha"
+                Text="Fecha"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+    
+
+         
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Picker x:Name="pkpais"
+    >
+                <Picker.Items>
+                    <x:String>Ecuador</x:String>
+                    <x:String>Brasil</x:String>
+
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Pais" 
+       x:Name="lbpais"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Picker x:Name="pkcuidad"
+    >
+                <Picker.Items>
+                    <x:String>Quito</x:String>
+                    <x:String>Cuenca</x:String>
+
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Cuidad" 
+       x:Name="lbcuidad"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+
+        </Grid>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+         
+
+            <Label Text="Monto Inicial" 
+                   x:Name="lbmontoinicial"
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Entry
+                Keyboard="Numeric"
+                x:Name="txtmontoinicial"
+                Grid.Row="0"
+Grid.Column="1"
+                VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"
+                ></Entry>
+
+
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Label Text="Pago Mensual" 
+                   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label Text="Pago Mensual" 
+                   x:Name="lbpagomensual"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+        </Grid>
+
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="Nombre" 
+                   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+            <Entry
+                x:Name="txtnombre"
+                Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"
+                ></Entry>
+
+            <Label Text="Apellido" 
+                   
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+            <Entry
+                x:Name="txtapellido"
+                Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"
+                ></Entry>
+
+            <Label Text="Edad" 
+                   
+Grid.Row="2"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+            <Entry
+                x:Name="txtedad"
+                Grid.Row="2"
+Grid.Column="2"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"
+                ></Entry>
+
+        </Grid>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <Button
+        Grid.Row="0"
+        Grid.Column="0"
+        Text="Calcular"
+         Clicked="Button_Clicked"
+        ></Button>
+
+                <Button
+        Grid.Row="0"
+        Grid.Column="1"
+        Text="Resumen"
+         Clicked="Button_Clicked_1"
+        ></Button>
+            </Grid>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

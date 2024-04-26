@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcorralesExamen.Vistas.VistaAcerca"
+             Title="Acerca De">
+    <VerticalStackLayout
+        Spacing="20"
+        Margin="25">
+        <Label 
+            Text="Acerca del Sistema"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="20"
+             TextColor="red"
+/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Estudiante" 
+   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+            <Label Text="Ricardo Corrales" 
+   
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Curso" 
+   
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+            <Label Text="7 A" 
+   
+Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+            <Label Text="Carrera" 
+   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+            <Label Text="Informatica" 
+   
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+        </Grid>
+
+        <Label
+            Text="2024"
+VerticalOptions="Center" 
+HorizontalOptions="Center" 
+FontSize="14"
+ TextColor="Blue"
+            ></Label>
+
+    </VerticalStackLayout>
+    
+</ContentPage>

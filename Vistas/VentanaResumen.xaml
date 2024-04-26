@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rcorralesExamen.Vistas.VentanaResumen"
+             Title="Resumen">
+    <VerticalStackLayout>
+
+        <Label
+x:Name="lbusuarioo"
+FontSize="14"
+HorizontalTextAlignment="End"
+        TextColor="Blue"
+></Label>
+
+
+            <Label 
+            Text="Resumen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Label Text="Nombre" 
+                   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbnombre"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Apellido" 
+                   
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbpellido"
+Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Label Text="Edad" 
+                   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbedad"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Fecha" 
+                   
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbfecha"
+Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+
+            
+
+        </Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Label Text="Cuidad" 
+                   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbcuidad"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="Pais" 
+                   
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbpais"
+Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <Label Text="Monto Inicial" 
+                   
+Grid.Row="0"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbmontoincial"
+Grid.Row="0"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+            <Label Text="PMensual" 
+                   
+Grid.Row="1"
+Grid.Column="0"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+            <Label  
+                   x:Name="lbpmensual"
+Grid.Row="1"
+Grid.Column="1"
+VerticalTextAlignment="Center"
+HorizontalTextAlignment="Center"/>
+
+
+
+
+        </Grid>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+
+
+
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+
+
+            <Button
+Grid.Row="0"
+Grid.Column="1"
+Text="Cerrar Sesión"
+Clicked="Button_Clicked"
+></Button>
+
+
+
+        </Grid>
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
